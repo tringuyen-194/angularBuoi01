@@ -1,0 +1,22 @@
+@mixin displayAll($bg-color, $pad) {
+  text-align: center;
+  color: white;
+  display: block;
+  padding: $pad;
+  background-color: $bg-color;
+}
+@mixin cs($w) {
+  width: $w;
+}
+.header {
+  @include displayAll((red), (30px 0));
+}
+.footer {
+  @include displayAll((blue), (30px 0));
+}
+.content {
+  @include displayAll((orange), (100px 0));
+}
+.sidebar {
+  @include displayAll((green), (100px 0));
+}
